@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    background-image: url(../img/bg-akat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px 50px;
+
+}
+
+header{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    height: 50px;
+    padding: 10px 150px 10px 150px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    background-color: rgba(134, 0, 0, 0.774);
+    font-size: 1.2em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1050px; 
+    align-items: center;
+}
+
+.card{
+    aspect-ratio: 3/4;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.revelar-carta{
+    transform: rotateY(180deg);
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+.back{
+    background-image: url(../img/92a3b66d67f6dfd19582e93c3464ada6.jpg);
+    backface-visibility: hidden;
+}
+
