@@ -2,6 +2,7 @@ const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player')
 const timer = document.querySelector('.timer')
 
+
 const membros = [
     'burgues',
     'dai',
@@ -33,7 +34,11 @@ const checkEndGame = () => {
         clearInterval(this.loop)
         setTimeout(() => {
 
-            alert(`Ótimo trabalho ${spanPlayer.innerHTML}, Agora você é um verdadeiro Membro da Digitasuki! Seu tempo foi de ${timer.innerHTML} segundos`)
+            window.location.href = "../pages/congratulations.html"
+           
+            // alert(`Ótimo trabalho ${spanPlayer.innerHTML}, Agora você é um verdadeiro Membro da Digitasuki! Seu tempo foi de ${timer.innerHTML} segundos`)
+
+            congrat()
 
         }, 900) 
     }
@@ -133,6 +138,5 @@ window.onload = () => {
     startTimer()
     loadGame()
 }
-
 
 
