@@ -6,6 +6,11 @@ body{
 }
 
 
+.teladeparabens{
+    justify-content: center
+    ;
+}
+
 .container{
     
     height: 300px;
