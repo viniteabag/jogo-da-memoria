@@ -34,7 +34,7 @@ const checkEndGame = () => {
         clearInterval(this.loop)
         setTimeout(() => {
 
-            window.location.href = "../pages/congratulations.html"
+            window.location.href = "../pages/congratulations.html" 
            
             // alert(`Ótimo trabalho ${spanPlayer.innerHTML}, Agora você é um verdadeiro Membro da Digitasuki! Seu tempo foi de ${timer.innerHTML} segundos`)
 
